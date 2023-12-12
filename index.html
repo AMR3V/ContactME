@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0E2237;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(6, 6, 133);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            font-size: 1.02rem;
+            color: blueviolet;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .sm {
+            background-color: rgb(219, 41, 101);
+        }
+
+        .sm ul {
+            display: flex;
+            margin: 0px 50px;
+            justify-content: baseline;
+        }
+
+        .sm ul li {
+            list-style: none;
+            margin: 10px 20px;
+            width: 150px;
+        }
+
+        .sm ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sm ul li a:hover {
+            text-decoration: none;
+            color: aquamarine;
+            font-size: 1.02rem;
+        }
+
+        .footerright {
+            color: white;
+            text-align: center;
+        }
+
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 0px 100px;
+            display: flex;
+            justify-content: center;
+            align-items:normal;
+            flex-direction: column;
+            background: url(design.png);
+            background-size: cover;
+        }
+        .content{
+            max-width: 800px;
+            text-align: center;
+            margin-left: 250px;
+            padding: 10px 10px;
+        }
+    
+        .content > h2{
+            font-size: 50px;
+            font-weight: 500px;
+            color: white;
+            text-align: center;
+        }
+
+        .content > p{
+            font-size: 30px;
+            font-weight: 300px;
+            color: white; 
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+           
+        }
+
+        .container .contactinfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .container .contactinfo .box{
+            position: relative;
+            padding: 30px;
+            display: flex;
+          
+        }
+        .container .contactinfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: whitesmoke;
+            flex-direction: column;
+            font-weight: 300px;
+            font-size: 25px;
+        }
+
+        .container .contactinfo .box .text h2{
+            font-weight: 500;
+            color: whitesmoke;
+        }
+
+        .contactform {
+            font-family: 'Poppins', sans-serif;
+            padding: 0px 60px;
+            padding-top: 30px;
+            color: white;
+        }
+
+        .contactform form div {
+            padding: 15px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactform form div input {
+            width: 28vw;
+            border-radius: 10px;
+            margin: 8px 0 0 0;
+            padding: 9px;
+        }
+
+        .buttons button {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            background-color: rgb(6, 6, 133);
+            padding: 9px 14px;
+            border-radius: 22px;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            width: 250px;
+        }
+
+        .buttons button:hover {
+            color: rgb(255, 255, 255);
+            background-color: #7c00ff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .left {
+                margin-left: 0;
+                /* Adjust margin for mobile */
+                margin-bottom: 10px;
+                /* Some spacing between Sheetal's Portfolio and the menu */
+            }
+
+            .menu {
+                margin-top: 10px;
+            }
+
+            .menu li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+}
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><h4>RITWIK VERMA</h4></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html"><b>HOME</b></a></li>
+                    <li><a href="/About.html"><b>ABOUT</b></a></li>
+                    <li><a href="/Projects.html"><b>PROJECTS</b></a></li>
+                    <li><a href="/Contactme.html"><b>CONTACT ME</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>Let's get in touch! Fill out the form below and I will respond as soon as possible.</p>
+        </div>
+
+            <section class="contact">
+        
+        <div class="container">
+            <div class="contactinfo">
+
+                <div class="box">
+                    <div class="text">
+                        <h2>Address</h2>
+                        <p>Dankuni, Hooghly</p>
+                        <p>West Bengal - 712311</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <h2>Phone Number</h2>
+                        <p>9007796486</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p>ritwikverma.2612@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+
+                <form action="https://formsubmit.co/ritwik.verma2612@gmail.com" target="_blank" method="POST">
+
+                    <div class="input-group">
+                        <span class="input-group-text"><h2>First and Last Name</h2></span>
+                        <input type="text" firstname="First Name" required>
+                        <input type="text" lastname="Last Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="useremail" class="form-label"><h2>Email Address</h2></label>
+                        <input type="email" name="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputConactNumber" class="form-label"><h2>Contact Number</h2></label>
+                        <input type="tel" name="Contact Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputQuery" class="form-label"><h2>Write Your Message here</h2></label>
+                        <input type="text" name="Message" required>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" value="Send" class="btn btn-primary">SUBMIT </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="sm">
+        <ul>
+            <li><a href="mailto: ritwik.verma2612@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/ritwikverma1201" target="_blank">LinkedIn</a></li>
+            <li><a href="https://instagram.com/_.amrev._" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/kiwtir.amrev" target="_blank">Faceook</a></li>
+            <li><a href="https://x.com/4MR3V" target="_blank">X</a></li>
+            <li><a href="https://www.snapchat.com/add/k.amr3v" target="_blank">Snapchat</a></li>
+            <li><a href="https://github.com/AMR3V" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+    <div class="footerright">
+        Ritwik's Developer Portal | All rights reserved
+    </div>
+</body>
+
+</html>
